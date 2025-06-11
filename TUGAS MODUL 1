@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+<img src="stitek3.png" width="300" height="250">
+<h1>FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+
+<form action="/submit" method="post">
+<fieldset>
+<legend>Data Pribadi</legend><!-- memberikan nama untuk fieldset -->
+<table>
+    <tr>
+        <td><label for="nama-lengkap">Nama Lengkap:</label></td>
+        <td><input type="text" id="nama" name="nama" placeholder="hardi sanjaya" required></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required></td>
+    </tr>
+    <tr>
+        <td><label for="jenis_kelamin">Jenis Kelamin:</label></td>
+        <td><input type="radio" id="Laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="Laki-laki">Laki-laki</label>
+            <input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan" required>
+            <label for="Perempuan">Perempuan</label></td>
+    </tr>
+    <tr>
+        <td><label for="Hobi">Hobi :</label></td>
+        <td><input type="checkbox" id="Hobi" name="Hobi" value="Membaca" required>
+            <label for="Hobi">Membaca</label>
+            <input type="checkbox" id="Hobi" name="Hobi" value="Bermusik" required>
+            <label for="Hobi">Bermusik</label>
+            <input type="checkbox" id="Hobi" name="Hobi" value="Olahraga" required>
+            <label for="Hobi">Olahraga</label></td>
+    </tr>
+    <tr>
+        <td><label for="Jurusan">Jurusan :</label></td>
+        <td><input list="Jurusan">
+            <datalist id="Jurusan">
+             <option value="Manajemen">
+             <option value="Teknik Informatika">
+             <option value="Akuntansi">
+            </datalist></td>
+    </tr>
+    <tr>
+        <td><label for="alamat">Alamat Lengkap :</label></td>
+        <td><textarea id="alamat" name="alamat" rows="4" cols="50"> </textarea></td>
+    </tr>
+    <tr><td><input type="submit" value="Kirim"></td></tr>
+    </table>
+
+</fieldset>
+</form>
+
+<a href="https://www.stitek.ac.id/">Informasi Kampus</a>
+</body>
+</html>
